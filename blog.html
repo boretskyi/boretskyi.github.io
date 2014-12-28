@@ -19,7 +19,7 @@ paginate_path: "/blog/:num/"
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">{{ post.author }}<br>{{ post.date | date: "%-d %B, %Y" }}</p>
+    <p class="post-meta">{{ post.author }},{{ post.date | date: "%-d %B, %Y" }}</p>
 </div>
 <hr>
 {% endfor %}

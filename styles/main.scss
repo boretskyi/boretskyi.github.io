@@ -16,10 +16,6 @@ body {
   color: $gray-dark;
 }
 
-body.yov {
-  background: black;
-}
-
 // -- Typography
 
 p {
@@ -168,11 +164,9 @@ hr.small {
 // Header
 
 .intro-header {
-  background-color: $gray;
-  background: no-repeat center center;
+  background-color: black;
   background-attachment: scroll;
   @extend .background-cover;
-  // NOTE: Background images are set within the HTML using inline CSS!
   margin-bottom: 50px;
   .site-heading,
   .post-heading,
@@ -446,6 +440,10 @@ form .row:first-child .floating-label-form-group {
 
 // Hub front page
 
+body.yov {
+  background: black;
+}
+
 .yov {
   .stars, #gravity {
     z-index: -100;
@@ -502,11 +500,11 @@ form .row:first-child .floating-label-form-group {
         a {
           @include transition-all(0.2s);
           @extend .caps;
-          @extend .serif;
+          @extend .sans-serif;
           font-size: 1.5em;
-          font-weight: 400;
+          font-weight: 300;
           color: white;
-          border-bottom: 3px solid transparent;
+          border-bottom: 1px solid transparent;
 
           &:hover {
             border-bottom-color: white;
