@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 // Global Components
 
@@ -346,10 +346,10 @@ footer {
     -ms-transition: top 0.3s ease,opacity 0.3s ease;
     transition: top 0.3s ease,opacity 0.3s ease;
   }
-  &::not(:first-child) {
-    padding-left: 14px;
-    border-left: 1px solid $gray-light;
-  }
+  // &::not(:first-child) {
+  //   padding-left: 14px;
+  //   border-left: 1px solid $gray-light;
+  // }
 }
 
 .floating-label-form-group-with-value {
