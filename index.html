@@ -1,0 +1,47 @@
+---
+# Hub page
+---
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="yov">
+  <!-- start stars -->
+  <div class="stars">
+      <canvas id="gravity"></canvas>
+  </div>
+  <!-- end stars -->
+
+  <div class="container logo">
+    <img src="{{ "/images/yov.svg " | prepend: site.baseurl }}" class="img-responsive">
+  </div>
+
+  <div class="container links">
+    <ul>
+      {% for link in site.navigation %}
+        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% include scripts.html %}
+
+  <!-- Stars script -->
+  <script src="{{ "/scripts/stars.js " | prepend: site.baseurl }}"></script>
+  <script>
+    var animations = function animations() {
+      console.log('Inside');
+      $('.logo').css('opacity', 1);
+
+      setTimeout(function() {
+        $('.links').css('opacity', 1);
+      }, 100);
+    };
+
+    InstantClick.init(animations);
+    InstantClick.on('change', animations);
+  </script>
+</body>
+
+</html>

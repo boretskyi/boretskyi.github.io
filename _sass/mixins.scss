@@ -1,0 +1,40 @@
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.serif {
+  font-family: 'Roboto Slab', 'Times New Roman', serif;
+}
+
+.sans-serif {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+  -moz-transform: translate3d($x, $y, $z);
+  -ms-transform: translate3d($x, $y, $z);
+  -o-transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
+}
+
+.hardware-accelerated {
+  /* Force Hardware Acceleration in WebKit */
+  @include translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@mixin transition-all($secs) {
+  -webkit-transition: all $secs;
+  -moz-transition: all $secs;
+  transition: all $secs;
+}

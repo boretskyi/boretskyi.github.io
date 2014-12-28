@@ -1,0 +1,30 @@
+# Site settings
+
+title: Йов
+email: boretskyi@yov.com.ua
+description: "Могилянська колективна платформа"
+keywords: "yov, могилянка, наукма, кма, брюховецький, квіт, мелешевич, студенти, спудеї, йов, іов, борецький, naukma, kma, академія, могилянська, могилянський, вісник, бонет, плацераці"
+baseurl: ""
+url: "http://yov.com.ua"
+twitter_username: yovboretskyi
+
+# Navigation
+
+navigation:
+- text: "Вісник"
+  url: /blog/
+- text: "Навколо"
+  url: /calendar/
+- text: "Друзі"
+  url: /friends/
+- text: "Про нас"
+  url: /about/
+
+# Build settings
+
+markdown: kramdown
+paginate: 5
+permalink: :categories/:year/:month/:day/:title/
+sass:
+    style: :compressed
+
