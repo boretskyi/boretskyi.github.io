@@ -1,9 +1,10 @@
 ---
-layout:     post
-title:      "Dinosaurs are extinct today"
-subtitle:   "because they lacked opposable thumbs and the brainpower to build a space program."
-date:       2014-06-10 12:00:00
-author:     "Павло Бондаренко"
+layout: post
+featured: true
+title: "Dinosaurs are extinct today"
+subtitle: "because they lacked opposable thumbs and the brainpower to build a space program."
+date: 2014-06-10 12:00:00
+author: "Павло Бондаренко"
 header-img: "images/post-bg-01.jpg"
 ---
 

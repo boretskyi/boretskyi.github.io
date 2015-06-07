@@ -5,7 +5,7 @@ layout: clean
 <body class="yov">
   <!-- start stars -->
   <div class="stars">
-      <canvas id="gravity"></canvas>
+    <canvas id="gravity"></canvas>
   </div>
   <!-- end stars -->
 
@@ -14,9 +14,11 @@ layout: clean
   </div>
 
   <div class="container links">
-    <ul>
+    <ul class="nav nav-justified">
       {% for link in site.navigation %}
+      {% if link.landing %}
         <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

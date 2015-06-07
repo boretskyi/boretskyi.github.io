@@ -1,0 +1,13 @@
+{% assign minutes = include.text | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+
+{{ minutes }}
+{% case minutes %}
+  {% when 1 %}хвилину
+  {% when 2 %}хвилини
+  {% when 3 %}хвилини
+  {% when 4 %}хвилини
+  {% else %}хвилин
+{% endcase %}

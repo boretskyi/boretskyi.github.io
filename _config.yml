@@ -2,13 +2,12 @@
 
 title: Йов
 email: boretskyi@yov.com.ua
-description: "Могилянська колективна платформа"
-keywords: "yov, могилянка, наукма, кма, брюховецький, квіт, мелешевич, студенти, спудеї, йов, іов, борецький, naukma, kma, академія, могилянська, могилянський, вісник, бонет, плацераці"
+description: Могилянська колективна платформа
+keywords: yov, могилянка, наукма, кма, брюховецький, квіт, мелешевич, студенти, спудеї, йов, іов, борецький, naukma, kma, академія, могилянська, могилянський, вісник, бонет, плацераці
 baseurl: ""
 url: "http://yov.com.ua"
 twitter_username: yovkma
 facebook_username: yovkma
-
 
 collections:
 - events
@@ -17,19 +16,37 @@ collections:
 
 navigation:
 - text: "Вісник"
-  url: /blog/
+  url: /journal/
+  landing: true
+  layout: journal
+
 - text: "Навколо"
   url: /calendar/
+  landing: true
+
 - text: "Друзі"
   url: /friends/
-- text: "Про нас"
+  landing: true
+
+- text: "Про&nbsp;нас"
   url: /about/
+  landing: true
+
+- text: "+&nbsp;Написати"
+  url: /write/
+  landing: false
+
+# Blog
+featured_count: 1
 
 # Build settings
 
 markdown: kramdown
-paginate: 5
-permalink: /article/:categories/:year/:month/:day/:title/
+paginate: 10
+paginate_path: /journal/:num
+permalink: /journal/:categories/:year/:month/:day/:title/
 sass:
     style: :compressed
 
+gems:
+  - jekyll-sitemap

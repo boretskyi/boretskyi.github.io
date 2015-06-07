@@ -1,9 +1,10 @@
 ---
-layout:     post
-title:      "Man must explore, and this is exploration at its greatest"
-subtitle:   "Problems look mighty small from 150 miles up"
-date:       2014-09-24 12:00:00
-author:     "Павло Бондаренко"
+layout: post
+featured: true
+title: "Man must explore, and this is exploration at its greatest"
+subtitle: "Problems look mighty small from 150 miles up"
+date: "2014-09-24 12:00:00"
+author: "Павло Бондаренко"
 header-img: "images/post-bg-06.jpg"
 ---
 

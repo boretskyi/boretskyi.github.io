@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+
+<div class="intro">
+  {% assign counter = 0 %}
+
+  {% for post in site.posts %}
+  {% if post.featured and counter < site.featured_count %}
+  {% assign counter = counter|plus:1 %}
+  <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ post.header-img }}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>{{ post.title }}</h1>
+            {% if post.subtitle %}
+            <h2 class="subheading">{{ post.subtitle }}</h2>
+            {% endif %}
+            <span class="meta">{{ post.author }}, {% include date.html date=post.date %}</span>
+            <div class="call-to-read">
+              <a href="{{ post.url }}">Читати далі</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {% assign counter = 0 %}
+
+      {% for post in paginator.posts %}
+
+      {% if post.featured and counter < site.featured_count %}
+      {% assign counter = counter|plus:1 %}
+      {% else %}
+
+      <div class="post-preview">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+              <h2 class="post-title">
+                  {{ post.title }}
+              </h2>
+              {% if post.subtitle %}
+              <h3 class="post-subtitle">
+                  {{ post.subtitle }}
+              </h3>
+              {% endif %}
+          </a>
+          <p class="post-meta">{{ post.author }}, {% include date.html date=post.date %}</p>
+      </div>
+      <hr>
+      {% endif %}
+
+      {% endfor %}
+
+      <!-- Pager -->
+      {% if paginator.total_pages > 1 %}
+      <ul class="pager">
+          {% if paginator.previous_page %}
+          <li class="previous">
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Свіжіші статті</a>
+          </li>
+          {% endif %}
+          {% if paginator.next_page %}
+          <li class="next">
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Старіші статті &rarr;</a>
+          </li>
+          {% endif %}
+      </ul>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+
+<hr>
