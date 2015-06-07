@@ -54,6 +54,11 @@ a img {
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 blockquote {
   @extend .sans-serif;
   color: $gray;
@@ -173,7 +178,7 @@ hr.small {
 
 .intro-header {
   background-color: black;
-  background-attachment: scroll;
+  background-attachment: fixed;
   @extend .background-cover;
   .site-heading,
   .post-heading,
