@@ -3,24 +3,26 @@ layout: default
 ---
 
 <!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ page.header-img }}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">{{ page.author }}, {% include date.html date=page.date %}</span>
-                    <div class="call-to-read">
-                        <em>{% include minutes.html text=content %}</em>
+<div class="intro">
+    <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ page.image }}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>{{ page.title }}</h1>
+                        {% if page.subtitle %}
+                        <h2 class="subheading">{{ page.subtitle }}</h2>
+                        {% endif %}
+                        <span class="meta">{{ page.author }}, {% include date.html date=page.date %}</span>
+                        <div class="call-to-read">
+                            <em>{% include minutes.html text=content %}</em>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
+</div>
 
 <!-- Post Content -->
 <article>

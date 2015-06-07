@@ -10,7 +10,7 @@ layout: default
   {% for post in site.posts %}
   {% if post.featured and counter < site.featured_count %}
   {% assign counter = counter|plus:1 %}
-  <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ post.header-img }}')">
+  <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ post.image }}')">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
