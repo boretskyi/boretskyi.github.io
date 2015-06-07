@@ -187,26 +187,30 @@ $(function(){
         window.setTimeout(callback, 1000 / 60);
     };
 
-    callCanvas($('canvas')[0]).init();
+    var $canvas = $('canvas');
 
-    //Resize Canvas
-    var waitForFinalEvent = (function () {
-      var timers = {};
-      return function (callback, ms, uniqueId) {
-        if (!uniqueId) {
-          uniqueId = "Don't call this twice without a uniqueId";
-        }
-        if (timers[uniqueId]) {
-          clearTimeout (timers[uniqueId]);
-        }
-        timers[uniqueId] = setTimeout(callback, ms);
-      };
-    })();
+    if ($canvas) {
+        callCanvas($canvas[0]).init();
 
-    $(window).resize(function () {
-        waitForFinalEvent(function(){
-            callCanvas($('canvas')[0]).init();
+        //Resize Canvas
+        var waitForFinalEvent = (function () {
+          var timers = {};
+          return function (callback, ms, uniqueId) {
+            if (!uniqueId) {
+              uniqueId = "Don't call this twice without a uniqueId";
+            }
+            if (timers[uniqueId]) {
+              clearTimeout (timers[uniqueId]);
+            }
+            timers[uniqueId] = setTimeout(callback, ms);
+          };
+        })();
 
-        }, 100, "some unique string");
-    });
+        $(window).resize(function () {
+            waitForFinalEvent(function(){
+                callCanvas($canvas[0]).init();
+
+            }, 100, "some unique string");
+        });
+    }
 });
