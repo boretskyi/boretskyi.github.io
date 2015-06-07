@@ -177,7 +177,7 @@ hr.small {
 }
 
 .intro-header {
-  background-color: black;
+  background-color: $gray-dark;
   background-attachment: fixed;
   @extend .background-cover;
   .site-heading,
