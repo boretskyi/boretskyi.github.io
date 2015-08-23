@@ -4,7 +4,7 @@ published: true
 title: "Історія про те, чого так довго не вистачало Могилянці"
 subtitle: Занедбаний внутрішній дворик КМЦ зовсім скоро обіцяє перетворитись на щось цікаве та цінне для студентів та випускників НаУКМА
 author: "Віктор Килимар"
-site: "http://www.facebook.com/victor.kylymar"
+authorlink: "http://www.facebook.com/victor.kylymar"
 date: "2015-05-07 18:00"
 image: "media/kmart/intro.jpg"
 featured: true

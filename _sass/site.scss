@@ -177,7 +177,7 @@ hr.small {
 }
 
 .intro-header {
-  background-color: $gray-dark;
+  background-color: darken($brand-primary, 20%);
   background-attachment: fixed;
   @extend .background-cover;
   .site-heading,
@@ -231,6 +231,11 @@ hr.small {
       font-size: 20px;
       a {
         color: white;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(white, 0.5);
+        &:hover {
+          border-bottom-color: white;
+        }
       }
     }
     @media only screen and (min-width: 768px) {
@@ -427,7 +432,7 @@ form .row:first-child .floating-label-form-group {
     color: white;
     text-decoration: none;
     background-color: $brand-primary;
-    border-color: $brand-primary;
+    border-color: darken($brand-primary, 5%);
   }
 }
 
@@ -461,6 +466,13 @@ form .row:first-child .floating-label-form-group {
       background-color: $gray-dark;
       cursor: not-allowed;
     }
+  }
+}
+
+.share {
+  text-align: center;
+  .social-buttons{
+    display: inline-block;
   }
 }
 
@@ -520,9 +532,10 @@ body.yov {
           font-size: 1.5em;
           font-weight: 400;
           color: white;
-          border: 3px solid transparent;
+          border: 2.5px solid transparent;
 
-          &:hover {
+          &:hover,
+          &:active {
             background: transparent;
             border-color: white;
             text-decoration: none;

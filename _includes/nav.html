@@ -23,9 +23,13 @@
 
         {% for link in site.navigation %}
           {% assign current = nil %}
-          {% if page.url == link.url or page.layout == link.layout %}
+          {% assign linkUrlWithIndex = link.url | append: 'index.html' %}
+          {% if page.url == link.url or page.url == linkUrlWithIndex or page.layout == link.layout %}
             {% assign current = 'current' %}
           {% endif %}
+
+          <script>
+          </script>
 
           <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
             <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
