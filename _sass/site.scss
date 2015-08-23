@@ -5,6 +5,7 @@
 
 html,body {
   height: 100%;
+  // overflow-x: hidden;
 }
 
 body {
@@ -179,6 +180,11 @@ hr.small {
 .intro-header {
   background-color: darken($brand-primary, 20%);
   background-attachment: fixed;
+
+  @media only screen and (min-width: 768px) {
+    background-attachment: static;
+  }
+
   @extend .background-cover;
   .site-heading,
   .post-heading,
@@ -473,11 +479,10 @@ form .row:first-child .floating-label-form-group {
 .share {
   .social-buttons{
     display: inline-block;
-
+    overflow-x: hidden;
     .fb-like {
         line-height: 0.7
     }
-
     a {
       margin-left: .5em;
     }
