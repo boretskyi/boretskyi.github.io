@@ -30,32 +30,38 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
+                <div class="post-content">
                 {{ content }}
+                </div>
 
                 <hr>
 
                 <div class="share">
-                    <!-- AddToAny BEGIN -->
-                    {% assign url = page.url | prepend: site.url | replace: 'http://', '' | replace: '//', '/'%}
-                    {% if page.title %}
-                      {% assign title = page.title | append: ' - ' | append: site.title %}
-                    {% else %}
-                      {% assign title = site.title %}
-                    {% endif %}
-                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style social-buttons">
-                    <a class="a2a_button_facebook"></a>
-                    <a class="a2a_button_twitter"></a>
-                    <a class="a2a_button_google_plus"></a>
-                    <a class="a2a_button_pocket"></a>
+                    <h4>Поділитися у соцмережах</h4>
+                    <div class="social-buttons">
+                        <!-- Load Facebook SDK for JavaScript -->
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/uk_UA/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+
+                        <!-- Twitter button code -->
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.twitter_username }}">Твітнути</a>
+
+                        <!-- Facebook button code -->
+                        <div class="fb-like" 
+                            data-href="{{ page.url | prepend: site.url | replace: '//', '/' }}"
+                            data-layout="standard" 
+                            data-action="like" 
+                            data-show-faces="true">
+                        </div>
                     </div>
-                    <script type="text/javascript">
-                    var a2a_config = a2a_config || {};
-                    a2a_config.linkname = "{{ title }}";
-                    a2a_config.linkurl = "{{ url }}";
-                    a2a_config.locale = "uk";
-                    </script>
-                    <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-                    <!-- AddToAny END -->
                 </div>
 
 
@@ -64,7 +70,7 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Попередня стаття</a>
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; <span class="hidden-xs">Попередня стаття</span></a>
                     </li>
                     {% endif %}
                     <li>
@@ -72,7 +78,7 @@ layout: default
                     </li>
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Наступна стаття &rarr;</a>
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}"><span class="hidden-xs">Наступна стаття</span> &rarr;</a>
                     </li>
                     {% endif %}
                 </ul>

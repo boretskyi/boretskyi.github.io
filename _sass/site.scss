@@ -9,7 +9,7 @@ html,body {
 
 body {
   @extend .serif;
-  font-size: 20px;
+  font-size: 17px;
   color: $gray-dark;
 }
 
@@ -86,7 +86,7 @@ hr.small {
   @extend .sans-serif;
   a.navbar-brand {
     @extend .caps;
-    font-size: 3rem;
+    font-size: 1.75em;
     font-weight: 400;
     margin-left: 0px !important;
     text-align: center;
@@ -100,7 +100,7 @@ hr.small {
       a {
         @include transition-all(0.2s);
         @extend .caps;
-        font-size: 12px;
+        font-size: .75em;
         font-weight: 800;
         border: 2px solid transparent;
 
@@ -194,41 +194,41 @@ hr.small {
     text-align: center;
     h1 {
       margin-top: 0;
-      font-size: 50px;
+      font-size: 2.5em;
     }
     .subheading {
-      font-size: 24px;
-      line-height: 1.1;
+      font-size: 1.2em;
+      line-height: 1.33;
       display: block;
       @extend .sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       margin: 10px 0 0;
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 80px;
+        font-size: 4em;
       }
     }
   }
   .post-heading {
     h1 {
-      font-size: 35px;
+      font-size: 1.75em;
     }
     .subheading,
     .meta {
-      line-height: 1.1;
+      line-height: 1.33;
       display: block;
     }
     .subheading {
       @extend .sans-serif;
-      font-size: 24px;
+      font-size: 1.2em;
       margin: 10px 0 30px;
-      font-weight: 600;
+      font-weight: 400;
     }
     .meta {
       @extend .serif;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 1em;
       a {
         color: white;
         text-decoration: none;
@@ -240,10 +240,10 @@ hr.small {
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 55px;
+        font-size: 2.75em;
       }
       .subheading {
-        font-size: 30px;
+        font-size: 1.5em;
       }
     }
   }
@@ -261,19 +261,20 @@ hr.small {
       color: $brand-primary;
     }
     > .post-title {
-      font-size: 30px;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      margin-bottom: .5em;
     }
     > .post-subtitle {
       margin: 0;
+      font-size: 1.25em;
       font-weight: 300;
-      margin-bottom: 10px;
+      margin-bottom: .5em;
     }
   }
   > .post-meta {
     color: $gray;
-    font-size: 18px;
+    font-size: .9em;
     font-weight: 300;
     margin-top: 0;
     > a {
@@ -288,7 +289,7 @@ hr.small {
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 36px;
+        font-size: 1.8em;
       }
     }
   }
@@ -297,15 +298,15 @@ hr.small {
 // Sections
 
 .section-heading {
-  font-size: 36px;
-  margin-top: 60px;
+  font-size: 1.8em;
+  margin-top: 3em;
   font-weight: 700;
 }
 
 .caption {
   text-align: center;
-  font-size: 14px;
-  padding: 10px;
+  font-size: .7em;
+  padding: .5em;
   font-style: italic;
   margin: 0;
   display: block;
@@ -314,13 +315,13 @@ hr.small {
 }
 
 footer {
-  padding: 50px 0 65px;
+  padding: 2.5em 0 3.25em;
   .list-inline {
     margin: 0;
     padding: 0;
   }
   .copyright {
-    font-size: 14px;
+    font-size: .7em;
     text-align: center;
     margin-bottom: 0;
   }
@@ -329,7 +330,7 @@ footer {
 // Contact Form Styles
 
 .floating-label-form-group {
-  font-size: 14px;
+  font-size: .7em;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
@@ -391,16 +392,16 @@ form .row:first-child .floating-label-form-group {
 .btn {
   @extend .sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: .7em;
   font-weight: 800;
   letter-spacing: 1px;
   border-radius: 0;
-  padding: 15px 25px;
+  padding: .75em 1.25em;
 }
 
 .btn-lg {
-  font-size: 16px;
-  padding: 25px 35px;
+  font-size: .8em;
+  padding: 1.25em 1.75em;
 }
 
 .btn-default {
@@ -416,15 +417,15 @@ form .row:first-child .floating-label-form-group {
 
 .btn-action {
   @extend .caps;
-  font-size: 14px;
+  font-size: .7em;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: 10px 5px;
+  padding: .75em 1.25em;
   background-color: white;
   border-radius: 0;
   @media only screen and (min-width: 768px) {
     font-size: 14px;
-    padding: 15px 25px;
+    padding: .75em 1.25em;
   }
 
   &:hover,
@@ -437,7 +438,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .call-to-read {
-  margin-top: 40px;
+  margin-top: 2em;
   a {
     @extend .sans-serif;
     @extend .btn-action;
@@ -448,7 +449,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .pager {
-  margin: 20px 0 0;
+  margin: 1em 0 0;
   li {
     > a,
     > span {
@@ -470,12 +471,15 @@ form .row:first-child .floating-label-form-group {
 }
 
 .share {
-  text-align: center;
-
   .social-buttons{
     display: inline-block;
+
+    .fb-like {
+        line-height: 0.7
+    }
+
     a {
-      margin-left: 10px;
+      margin-left: .5em;
     }
   }
 }
