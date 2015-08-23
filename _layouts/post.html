@@ -13,7 +13,7 @@ layout: default
                         {% if page.subtitle %}
                         <h2 class="subheading">{{ page.subtitle }}</h2>
                         {% endif %}
-                        <span class="meta"><a href="{{ page.site }}">{{ page.author }}</a>, {% include date.html date=page.date %}</span>
+                        <span class="meta">{% if page.authorlink %}<a href="{{ page.authorlink }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}, {% include date.html date=page.date %}</span>
                         <div class="call-to-read">
                             <em>Читання на {% include minutes.html text=content %}</em>
                         </div>

@@ -18,7 +18,7 @@ layout: default
             {% if post.subtitle %}
             <h2 class="subheading">{{ post.subtitle }}</h2>
             {% endif %}
-            <span class="meta"><a href="{{ post.site }}">{{ post.author }}</a>, {% include date.html date=post.date %}</span>
+            <span class="meta">{% if post.authorlink %}<a href="{{ post.authorlink }}">{{ post.author }}</a>{% else %}{{ post.author }}{% endif %}, {% include date.html date=post.date %}</span>
             <div class="call-to-read">
               <a href="{{ post.url }}">Читати далі</a>
             </div>
