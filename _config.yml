@@ -43,7 +43,7 @@ featured_count: 1
 # Build settings
 
 markdown: kramdown
-paginate: 10
+paginate: 3
 paginate_path: /journal/:num
 permalink: /journal/:categories/:year/:month/:day/:title/
 sass:
