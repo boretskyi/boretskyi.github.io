@@ -107,7 +107,7 @@ hr.small {
 
         &:hover,&:focus {
           border-color: white;
-          color: white;
+          color: $brand-primary;
         }
         &.current {
           opacity: 0.5;
@@ -118,25 +118,8 @@ hr.small {
       }
     }
   }
-  @media only screen and (min-width: 768px) {
-    background: transparent;
-    border-bottom: 1px solid transparent;
-    padding: 2em;
-    .navbar-brand {
-      color: white;
-      padding: .5em;
-    }
-    .nav {
-      li {
-        a {
-          color: white;
-          padding: 1em;
-        }
-      }
-    }
-  }
 
-  @media only screen and (min-width: 1170px) {
+  // @media only screen and (min-width: 1170px) {
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
@@ -167,6 +150,28 @@ hr.small {
     &.is-visible {
       /* if the user changes the scrolling direction, we show the header */
       @include translate3d(0, 0, 0);
+    }
+  // }
+
+  @media only screen and (min-width: 768px) {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    padding: 2em;
+    .navbar-brand {
+      color: white;
+      padding: .5em;
+    }
+    .nav {
+      li {
+        a {
+          color: white;
+          padding: 1em;
+
+          &:hover,&:focus {
+            color: white;
+          }
+        }
+      }
     }
   }
 }
