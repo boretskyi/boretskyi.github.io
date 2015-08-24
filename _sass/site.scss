@@ -214,8 +214,8 @@ hr.small {
   background-color: darken($brand-primary, 20%);
   background-attachment: fixed;
 
-  @media only screen and (min-width: 768px) {
-    background-attachment: static;
+  @media only screen and (max-width: 768px) {
+    background-attachment: scroll;
   }
 
   a.post-link {
