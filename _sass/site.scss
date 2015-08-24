@@ -122,7 +122,7 @@ hr.small {
     }
   }
 
-  // @media only screen and (min-width: 1170px) {
+  @media only screen and (min-width: 1170px) {
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
@@ -154,12 +154,37 @@ hr.small {
       /* if the user changes the scrolling direction, we show the header */
       @include translate3d(0, 0, 0);
     }
-  // }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
+    & {
+      padding: 1em;
+    }
+
+    .container-fluid {
+      padding-left: 0;
+    }
+
+    .navbar-brand {
+      font-size: 1em;
+    }
+    .nav {
+      li {
+        a {
+          font-size: .6em;
+          padding: .1em;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    padding: 2em;
+  }
 
   @media only screen and (min-width: 768px) {
     background: transparent;
     border-bottom: 1px solid transparent;
-    padding: 2em;
     .navbar-brand {
       color: white;
       padding: .5em;
