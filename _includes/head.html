@@ -21,7 +21,11 @@
     <meta property="og:description" content="{{ site.description }}">
     {% endif %}
     {% if page.image %}
+    {% if page.image contains 'http://' or page.image contains 'https://' %}
     <meta property="og:image" content="{{ page.image }}">
+    {% else %}
+    <meta property="og:image" content="{% include url.html part=page.image %}">
+    {% endif %}
     {% else %}
     <meta property="og:image" content="{% include url.html part='/images/yov.jpg' %}">
     {% endif %}
