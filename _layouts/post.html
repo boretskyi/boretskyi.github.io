@@ -2,27 +2,7 @@
 layout: default
 ---
 
-<!-- Post Header -->
-<div class="intro">
-    <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ page.image }}')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1>{{ page.title }}</h1>
-                        {% if page.subtitle %}
-                        <h2 class="subheading">{{ page.subtitle }}</h2>
-                        {% endif %}
-                        <span class="meta">{% if page.authorlink %}<a href="{{ page.authorlink }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}, {% include date.html date=page.date %}</span>
-                        <div class="call-to-read">
-                            <em>Читання на {% include minutes.html text=content %}</em>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-</div>
+{% include post_header.html post=page %}
 
 <!-- Post Content -->
 <article>

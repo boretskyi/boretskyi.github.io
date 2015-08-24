@@ -1,0 +1,30 @@
+<!-- Post Header -->
+<div class="intro">
+    <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ include.post.image }}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        {% if include.link %}
+                        <a href="{{ include.link | prepend: site.baseurl }}" class="post-link">
+                        {% endif %}
+                        <h1>{{ include.post.title }}</h1>
+                        {% if include.post.subtitle %}
+                        <h2 class="subheading">{{ include.post.subtitle }}</h2>
+                        {% endif %}
+                        {% if include.link %}
+                        </a>
+                        {% endif %}
+                        <span class="meta">{% if include.post.authorlink %}<a href="{{ include.post.authorlink }}">{{ include.post.author }}</a>{% else %}{{ include.post.author }}{% endif %}, {% include date.html date=include.post.date %}</span>
+                        <div class="call-to-read">
+                            <em>Читання на {% include minutes.html text=include.post.content %}</em>
+                        </div>
+                        <div class="down-arrow {% if include.link %}invisible{% endif %}">
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>

@@ -10,7 +10,7 @@ html,body {
 
 body {
   @extend .serif;
-  font-size: 17px;
+  font-size: 18px;
   color: $gray-dark;
 }
 
@@ -185,6 +185,35 @@ hr.small {
     background-attachment: static;
   }
 
+  a.post-link {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: $brand-light;
+    }
+    outline: none;
+  }
+
+  .call-to-read {
+    margin-top: 2em;
+    a {
+      @extend .sans-serif;
+      @extend .btn-action;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+    }
+  }
+
+  .down-arrow {
+    text-align: center;
+    font-size: 2em;
+    @include transition-all(0.2s);
+    &.invisible {
+      opacity: 0;
+    }
+  }
+
   @extend .background-cover;
   .site-heading,
   .post-heading,
@@ -192,7 +221,7 @@ hr.small {
     padding: 100px 0 50px;
     color: white;
     @media only screen and (min-width: 768px) {
-      padding: 120px 0;
+      padding: 120px 0 50px;
     }
   }
   .site-heading,
@@ -227,7 +256,7 @@ hr.small {
     }
     .subheading {
       @extend .sans-serif;
-      font-size: 1.2em;
+      font-size: 1.25em;
       margin: 10px 0 30px;
       font-weight: 400;
     }
@@ -246,10 +275,10 @@ hr.small {
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 2.75em;
+        font-size: 2em;
       }
       .subheading {
-        font-size: 1.5em;
+        font-size: 1.25em;
       }
     }
   }
@@ -268,13 +297,14 @@ hr.small {
     }
     > .post-title {
       font-size: 1.5em;
-      margin-top: 1.5em;
+      margin-top: 1em;
       margin-bottom: .5em;
     }
     > .post-subtitle {
       margin: 0;
-      font-size: 1.25em;
+      font-size: 1em;
       font-weight: 300;
+      line-height: 1.25;
       margin-bottom: .5em;
     }
   }
@@ -295,7 +325,10 @@ hr.small {
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 1.8em;
+        font-size: 1.5em;
+      }
+      > .post-subtitle {
+        font-size: 1em;
       }
     }
   }
@@ -423,16 +456,12 @@ form .row:first-child .floating-label-form-group {
 
 .btn-action {
   @extend .caps;
-  font-size: .7em;
+  font-size: .75em;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: .75em 1.25em;
+  padding: 1em;
   background-color: white;
   border-radius: 0;
-  @media only screen and (min-width: 768px) {
-    font-size: 14px;
-    padding: .75em 1.25em;
-  }
 
   &:hover,
   &:focus {
@@ -440,17 +469,6 @@ form .row:first-child .floating-label-form-group {
     text-decoration: none;
     background-color: $brand-primary;
     border-color: darken($brand-primary, 5%);
-  }
-}
-
-.call-to-read {
-  margin-top: 2em;
-  a {
-    @extend .sans-serif;
-    @extend .btn-action;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
   }
 }
 
@@ -480,7 +498,7 @@ form .row:first-child .floating-label-form-group {
   .social-buttons{
     display: inline-block;
     overflow-x: hidden;
-    padding: 1em .5em;
+    padding: .5em 0 .25em 0;
     .fb-like {
         line-height: 0.7
     }
