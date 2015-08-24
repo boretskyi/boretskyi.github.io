@@ -203,6 +203,12 @@ hr.small {
     outline: none;
   }
 
+  .feat {
+    @extend .caps;
+    @extend .sans-serif;
+    font-size: .7em;
+  }
+
   .call-to-read {
     margin-top: 2em;
     a {
