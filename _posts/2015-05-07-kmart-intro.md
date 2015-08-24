@@ -6,7 +6,7 @@ subtitle: Занедбаний внутрішній дворик КМЦ зовс
 author: "Віктор Килимар"
 authorlink: "http://www.facebook.com/victor.kylymar"
 date: "2015-05-07 18:00"
-image: "media/kmart/intro.jpg"
+image: "/media/kmart/intro.jpg"
 featured: true
 ---
 
