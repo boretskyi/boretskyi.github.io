@@ -20,6 +20,8 @@ $("img").addClass("img-responsive")
 // Navigation Scripts to Show Header on Scroll-Up
 $(function() {
   //primary navigation slide-in effect
+  var WIDTH_THRESHOLD = 768;
+
   var headerHeight = $('.navbar-custom').height();
   $(window).on('scroll', {
       previousTop: 0
@@ -32,7 +34,9 @@ $(function() {
         if (currentTop > 0 && $('.navbar-custom').hasClass('is-fixed')) {
           $('.navbar-custom').addClass('is-visible');
         } else {
-          $('.navbar-custom').removeClass('is-visible is-fixed');
+          if ($(window).width() > WIDTH_THRESHOLD) {
+            $('.navbar-custom').removeClass('is-visible is-fixed');
+          }
         }
       } else {
         //if scrolling down...

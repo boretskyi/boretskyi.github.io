@@ -122,39 +122,37 @@ hr.small {
     }
   }
 
-  // @media only screen and (min-width: 1170px) {
-    &.is-fixed {
-      /* when the user scrolls down, we hide the header right above the viewport */
-      position: fixed;
-      padding: 0;
-      @include translate3d(0, -100%, 0);
-      background-color: white;
-      border-bottom: 1px solid darken(white, 5%);
+  &.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    padding: 0;
+    @include translate3d(0, -100%, 0);
+    background-color: white;
+    border-bottom: 1px solid darken(white, 5%);
 
-      .navbar-brand {
-        color: $gray-dark;
-        &:hover,
-        &:focus {
-          color: $brand-primary;
-        }
+    .navbar-brand {
+      color: $gray-dark;
+      &:hover,
+      &:focus {
+        color: $brand-primary;
       }
-      .nav {
-        li {
-          a {
-            color: $gray-dark;
-            &:hover,
-            &:focus {
-              color: $brand-primary;
-            }
+    }
+    .nav {
+      li {
+        a {
+          color: $gray-dark;
+          &:hover,
+          &:focus {
+            color: $brand-primary;
           }
         }
       }
     }
-    &.is-visible {
-      /* if the user changes the scrolling direction, we show the header */
-      @include translate3d(0, 0, 0);
-    }
-  // }
+  }
+  &.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    @include translate3d(0, 0, 0);
+  }
 
   @media only screen and (min-width: 768px) and (max-width: 900px) {
     & {
@@ -165,13 +163,10 @@ hr.small {
       padding-left: 0;
     }
 
-    .navbar-brand {
-      font-size: 1em;
-    }
     .nav {
       li {
         a {
-          font-size: .6em;
+          font-size: .75em;
           padding: .1em;
         }
       }
