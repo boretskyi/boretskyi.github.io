@@ -5,44 +5,43 @@ layout: default
 <!-- Page Header -->
 <div class="intro">
   {% assign counter = 0 %}
-
   {% for post in site.posts %}
-  {% if post.featured and counter < site.featured_count %}
-  {% assign counter = counter|plus:1 %}
-  <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ post.image }}')">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="post-heading">
-            <h1>{{ post.title }}</h1>
-            {% if post.subtitle %}
-            <h2 class="subheading">{{ post.subtitle }}</h2>
-            {% endif %}
-            <span class="meta">{% if post.authorlink %}<a href="{{ post.authorlink }}">{{ post.author }}</a>{% else %}{{ post.author }}{% endif %}, {% include date.html date=post.date %}</span>
-            <div class="call-to-read">
-              <a href="{{ post.url }}">Читати далі</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  {% endif %}
+    {% if post.featured and counter < site.featured_count %}
+      {% assign counter = counter|plus:1 %}
+      {% include post_header.html post=post link=post.url %}
+    {% endif %}
   {% endfor %}
+  {% assign latest_post = site.posts | first %}
+  {% if counter == 0 %}
+    {% include post_header.html post=latest_post link=latest_post.url %}
+  {% endif %}
+  {% assign featured_counter = counter %}
 </div>
 
 <!-- Main Content -->
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {% assign counter = 0 %}
-
       {% for post in paginator.posts %}
+      {% assign show = false %}
 
-      {% if post.featured and counter < site.featured_count %}
-      {% assign counter = counter|plus:1 %}
+      {% assign counter = 0 %}
+      {% if post.featured %}
+        {% for compare in site.posts %}
+          {% if compare.featured %}
+            {% assign counter = counter|plus:1 %}
+            {% if compare.id == post.id and counter < site.featured_count %}
+              {% assign show = true %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
       {% else %}
+        {% if post.id != latest_post.id or featured_counter > 0 %}
+          {% assign show = true %}
+        {% endif %}
+      {% endif %}
 
+      {% if show %}
       <div class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl }}">
               <h2 class="post-title">
@@ -66,12 +65,12 @@ layout: default
       <ul class="pager">
           {% if paginator.previous_page %}
           <li class="previous">
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Свіжіші статті</a>
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; <span class="hidden-xs">Свіжіші статті</span></a>
           </li>
           {% endif %}
           {% if paginator.next_page %}
           <li class="next">
-              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Старіші статті &rarr;</a>
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="hidden-xs">Старіші статті</span> &rarr;</a>
           </li>
           {% endif %}
       </ul>
