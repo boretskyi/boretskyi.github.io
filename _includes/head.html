@@ -22,6 +22,8 @@
     {% endif %}
     {% if page.image %}
     <meta property="og:image" content="{{ page.image }}">
+    {% else %}
+    <meta property="og:image" content="{% include url.html part='images/yov.jpg' }}">
     {% endif %}
 
     <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
