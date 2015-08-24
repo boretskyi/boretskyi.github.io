@@ -531,9 +531,9 @@ form .row:first-child .floating-label-form-group {
   .social-buttons{
     display: inline-block;
     overflow-x: hidden;
-    padding: .5em 0 .25em 0;
-    .fb-like {
-        line-height: 0.7
+    padding: .25em 0 .25em 0;
+    .twitter-share-button {
+        vertical-align: bottom;
     }
     a {
       margin-left: .5em;
