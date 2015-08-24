@@ -32,11 +32,11 @@ layout: default
                         <!-- Twitter button code -->
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.twitter_username }}">Твітнути</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{% include url.html part=page.url %}" data-via="{{ site.twitter_username }}">Tweet</a>
 
                         <!-- Facebook button code -->
                         <div class="fb-like" 
-                            data-href="{{ page.url | prepend: site.url | replace: '//', '/' }}"
+                            data-href="{% include url.html part=page.url %}"
                             data-layout="standard" 
                             data-action="like" 
                             data-show-faces="true">
@@ -50,7 +50,7 @@ layout: default
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; <span class="hidden-xs">Попередня стаття</span></a>
+                        <a href="{{ page.previous.url | prepend: site.baseurl }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; <span class="hidden-xs">Попередня стаття</span></a>
                     </li>
                     {% endif %}
                     <li>
@@ -58,7 +58,7 @@ layout: default
                     </li>
                     {% if page.next.url %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}"><span class="hidden-xs">Наступна стаття</span> &rarr;</a>
+                        <a href="{{ page.next.url | prepend: site.baseurl }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}"><span class="hidden-xs">Наступна стаття</span> &rarr;</a>
                     </li>
                     {% endif %}
                 </ul>
