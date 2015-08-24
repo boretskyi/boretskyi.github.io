@@ -65,6 +65,10 @@ blockquote {
   color: $gray;
   font-weight: 300;
   font-style: italic;
+
+  p:first-child {
+    margin-top: 0;
+  }
 }
 
 hr.small {
