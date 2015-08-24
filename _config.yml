@@ -8,6 +8,7 @@ baseurl: ""
 url: "http://yov.com.ua"
 twitter_username: yov_boretskiy
 facebook_username: yovkma
+email: boretskyi@yov.com.ua
 
 collections:
 - events

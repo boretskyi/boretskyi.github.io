@@ -343,9 +343,31 @@ hr.small {
 .content {
   a {
     border-bottom-color: rgba(black, 0.3);
-    &:hover {
+    &:hover,&:focus {
       border-bottom-color: $brand-primary;
     }
+  }
+}
+
+footer {
+  background: lighten($brand-primary, 42%);
+  font-size: 1em;
+  font-weight: 300;
+  color: $gray;
+  margin-top: 3em;
+  padding: 2.5em 0 3.25em;
+  a {
+    color: $gray;
+    border-bottom-color: rgba(black, 0.2);
+    &:hover,&:focus {
+      color: $gray-dark;
+      border-bottom-color: $gray-dark;
+      text-decoration: none;
+    }
+  }
+  .list-inline {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -366,19 +388,6 @@ hr.small {
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-}
-
-footer {
-  padding: 2.5em 0 3.25em;
-  .list-inline {
-    margin: 0;
-    padding: 0;
-  }
-  .copyright {
-    font-size: .7em;
-    text-align: center;
-    margin-bottom: 0;
-  }
 }
 
 // Contact Form Styles

@@ -2,8 +2,9 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
+            <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2">
+                <h4>Соцмережі та підписка</h4>
+                <ul class="list-inline">
                     <li>
                         <a href="{{ "/feed.xml" | prepend: site.baseurl }}" data-no-instant>
                             <span class="fa-stack fa-lg">
@@ -43,7 +44,16 @@
                     </li>
                     {% endif %}
                 </ul>
-                <p class="copyright text-muted">&copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <h4>Контактна інформація</h4>
+                Пошта: <a href="{{ site.email }}">{{ site.email }}</a></li>
+            </div>
+            <div class="col-lg-2 col-md-3">
+                <h4>Долучайтеся!</h4>
+                <ul class="list-unstyled">
+                    <li><a href="{{ '/write/' | prepend: site.baseurl }}">Написати cтаттю</a></li>
+                </ul>
             </div>
         </div>
     </div>
