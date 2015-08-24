@@ -8,6 +8,13 @@
 
     <meta property="og:url" content="{% include url.html part=page.url %}">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}">
+    {% else %}
+    <meta property="og:title" content="{{ site.title }}">
+    {% endif %}
     {% if page.subtitle %}
     <meta property="og:description" content="{{ page.subtitle }}">
     {% else %}
