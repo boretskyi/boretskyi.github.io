@@ -19,12 +19,15 @@ layout: default
 </div>
 
 <!-- Main Content -->
-<div class="container">
+<div class="container" id="posts">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {% for post in paginator.posts %}
-      {% assign show = false %}
+      {% assign show = true %}
 
+      {% comment %}
+
+      {% assign show = false %}
       {% assign counter = 0 %}
       {% if post.featured %}
         {% for compare in site.posts %}
@@ -43,6 +46,8 @@ layout: default
           {% assign show = true %}
         {% endif %}
       {% endif %}
+
+      {% endcomment %}
 
       {% if show %}
       <div class="post-preview">
@@ -68,12 +73,12 @@ layout: default
       <ul class="pager">
           {% if paginator.previous_page %}
           <li class="previous">
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; <span class="hidden-xs">Свіжіші статті</span></a>
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}#posts">&larr; <span class="hidden-xs">Свіжіші статті</span></a>
           </li>
           {% endif %}
           {% if paginator.next_page %}
           <li class="next">
-              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="hidden-xs">Старіші статті</span> &rarr;</a>
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}#posts"><span class="hidden-xs">Старіші статті</span> &rarr;</a>
           </li>
           {% endif %}
       </ul>
