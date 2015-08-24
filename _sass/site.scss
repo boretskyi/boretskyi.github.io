@@ -166,8 +166,9 @@ hr.small {
     .nav {
       li {
         a {
+          padding-left: .5em !important;
+          padding-right: .5em !important;
           font-size: .75em;
-          padding: .1em;
         }
       }
     }
