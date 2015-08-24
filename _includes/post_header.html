@@ -18,7 +18,7 @@
                         {% if include.link %}
                         </a>
                         {% endif %}
-                        <span class="meta"><span class="post-meta-main">{% if include.post.authorlink %}<a href="{{ include.post.authorlink }}">{{ include.post.author }}</a>{% else %}{{ include.post.author }}{% endif %}, {% include date.html date=include.post.date %}.</span> <a class="comments-link" href="{{ include.post.url | prepend: site.baseurl }}#disqus_thread">Коментарі</a></span>
+                        <span class="meta"><span class="post-meta-main">{% if include.post.authorlink %}<a href="{{ include.post.authorlink }}">{{ include.post.author }}</a>{% else %}{{ include.post.author }}{% endif %}, {% include date.html date=include.post.date %}.</span> <a class="comments-link" href="{% include url.html part=include.post.url %}#disqus_thread">Коментарі</a></span>
                         <div class="call-to-read">
                             <em>Читання на {% include minutes.html text=include.post.content %}</em>
                         </div>

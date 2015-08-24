@@ -61,7 +61,7 @@ layout: default
               </h3>
               {% endif %}
           </a>
-          <p class="post-meta"><span class="post-meta-main">{% if post.authorlink %}<a href="{{ post.authorlink }}">{{ post.author }}</a>{% else %}{{ post.author }}{% endif %}, {% include date.html date=post.date %}.</span> <a class="comments-link" href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Коментарі</a></p>
+          <p class="post-meta"><span class="post-meta-main">{% if post.authorlink %}<a href="{{ post.authorlink }}">{{ post.author }}</a>{% else %}{{ post.author }}{% endif %}, {% include date.html date=post.date %}.</span> <a class="comments-link" href="{% include url.html part=post.url %}#disqus_thread">Коментарі</a></p>
       </div>
       <hr>
       {% endif %}
