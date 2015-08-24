@@ -553,9 +553,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 .share {
+  border: 3px solid lighten($brand-primary, 20%);
+  padding: 1em;
   .social-buttons{
     display: inline-block;
-    padding: .25em 0 .25em 0;
+    padding: .25em 0 1.25em 0;
     .twitter-share-button {
         vertical-align: bottom;
     }

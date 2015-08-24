@@ -33,6 +33,7 @@
     <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="canonical" href="{% include url.html part=page.url %}">
+    <link rel="me" href="https://twitter.com/{{ site.twitter_username }}">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "/styles/css/bootstrap.min.css" | prepend: site.baseurl }}">

@@ -14,11 +14,24 @@ layout: default
                 {{ content }}
                 </div>
 
-                <hr>
-
-                <div class="share">
-                    <h4>Поділитися у соцмережах</h4>
+                <div class="share text-center">
+                    <h3>Поділитися у соцмережах</h3>
                     <div class="social-buttons ">
+
+                        {% comment %}
+                        <a class="btn btn-action" href='https://www.facebook.com/sharer/sharer.php?u={% include url.html part=page.url %}' target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span> Поділитися на фейсбуці</a>
+                        <a class="btn btn-action" href="https://twitter.com/intent/tweet?url={% include url.html part=page.url %}&via={{ site.twitter_username }}&text={{ page.title | escape }}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span> Твітнути
+                        </a>
+                        {% endcomment %}
+
                         <!-- Facebook SDK -->
                         <div id="fb-root"></div>
                         <script>
@@ -34,27 +47,15 @@ layout: default
                         <!-- Twitter SDK -->
                         <script type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
 
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{% include url.html part=page.url %}" data-via="{{ site.twitter_username }}">Tweet</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{% include url.html part=page.url %}" data-text="{{ page.title }}" data-via="{{ site.twitter_username }}">Tweet</a>
 
                         <!-- Facebook share button code -->
                         <div class="fb-share-button"
                             data-href="{% include url.html part=page.url %}"
                             data-layout="button_count">
                         </div>
-
-                        <!-- Facebook like button code -->
-                        <div class="fb-like"
-                            data-href="{% include url.html part=page.url %}"
-                            data-layout="standard"
-                            data-action="like"
-                            data-share="false"
-                            data-show-faces="false">
-                        </div>
                     </div>
                 </div>
-
-
-                <hr>
 
                 <ul class="pager">
                     {% if page.previous.url %}
