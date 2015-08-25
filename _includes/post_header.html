@@ -1,12 +1,13 @@
 <!-- Post Header -->
 <div class="intro">
     <header class="intro-header" style="background-image: url('{{ include.post.image }}')">
+        <div class="fader"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
                         {% if include.post.featured %}
-                        <span class="feat">Вибір редакції</span>
+                        <span class="feat"><i class="fa fa-star"></i> Вибір редакції</span>
                         {% endif %}
                         {% if include.link %}
                         <a href="{{ include.link | prepend: site.baseurl }}" class="post-link">

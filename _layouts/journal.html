@@ -23,33 +23,6 @@ layout: default
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {% for post in paginator.posts %}
-      {% assign show = true %}
-
-      {% comment %}
-
-      {% assign show = false %}
-      {% assign counter = 0 %}
-      {% if post.featured %}
-        {% for compare in site.posts %}
-          {% if compare.featured %}
-            {% assign counter = counter|plus:1 %}
-            {% if compare.id == post.id and counter < site.featured_count %}
-              {% assign show = true %}
-            {% endif %}
-            {% if counter >= site.featured_counter %}
-              {% assign show = true %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      {% else %}
-        {% if post.id != latest_post.id or featured_counter > 0 %}
-          {% assign show = true %}
-        {% endif %}
-      {% endif %}
-
-      {% endcomment %}
-
-      {% if show %}
       <div class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl }}">
               <h2 class="post-title">
@@ -64,8 +37,6 @@ layout: default
           <p class="post-meta"><span class="post-meta-main">{% if post.authorlink %}<a href="{{ post.authorlink }}">{{ post.author }}</a>{% else %}{{ post.author }}{% endif %}, {% include date.html date=post.date %}.</span> <a class="comments-link" href="{% include url.html part=post.url %}#disqus_thread"></a></p>
       </div>
       <hr>
-      {% endif %}
-
       {% endfor %}
 
       <!-- Pager -->
