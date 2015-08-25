@@ -29,7 +29,7 @@ $(function() {
     function() {
       var currentTop = $(window).scrollTop();
       //check if user is scrolling up
-      if (currentTop < this.previousTop) {
+      if (currentTop <= this.previousTop) {
         //if scrolling up...
         if (currentTop > 0 && $('.navbar-custom').hasClass('is-fixed')) {
           $('.navbar-custom').addClass('is-visible');
@@ -41,7 +41,9 @@ $(function() {
       } else {
         //if scrolling down...
         $('.navbar-custom').removeClass('is-visible');
-        if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed');
+        if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) {
+          $('.navbar-custom').addClass('is-fixed');
+        }
       }
     this.previousTop = currentTop;
   });
