@@ -594,3 +594,28 @@ body.yov {
     }
   }
 }
+
+.grid-item {
+  margin-top: 2em;
+  a {
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+    border: 2px solid transparent;
+    &:hover,&:focus {
+      color: $brand-primary;
+      border-color: $brand-primary;
+      img {
+        cursor: inherit;
+      }
+    }
+    @include transition-all(0.2s);
+  }
+
+  img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 12em;
+    margin-bottom: 1em;
+  }
+}

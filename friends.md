@@ -4,21 +4,22 @@ title: "Друзі"
 permalink: /friends/
 ---
 
+<!-- Тут можна щось написати -->
+
 <div>
-{% assign friends_per_row = 3 %}
 {% assign counter = 0 %}
 {% for friend in site.data.friends %}
     {% if counter == 0 %}
     <div class="row">
     {% endif %}
-        <div class="col-md-4 text-center">
+        <div class="col-sm-3 text-center grid-item">
             <a href="{{ friend.link }}">
-                <div style="width: 100%; height: 10em; background: black;"></div>
-                {{ friend.title }}
+                <img src="{{ friend.image | prepend: site.baseurl }}">
+                <span class="meta">{{ friend.title }}</span>
             </a>
         </div>
     {% assign counter = counter | plus: 1 %}
-    {% if counter == friends_per_row %}
+    {% if counter == 4 %}
     </div>
     {% assign counter = 0 %}
     {% endif %}
