@@ -1,10 +1,9 @@
 ---
 layout: page
-title: "Друзі"
+title: Друзі
+description: Наші могилянські та немогилянські друзі
 permalink: /friends/
 ---
-
-<!-- Тут можна щось написати -->
 
 <div>
 {% assign counter = 0 %}
