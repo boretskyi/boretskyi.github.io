@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Про нас"
-header-img: "/images/about-bg.jpg"
+title: Про нас
+image: "/images/about-bg.jpg"
 permalink: /about/
 ---
 

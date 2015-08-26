@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Написати"
-header-img: "/images/about-bg.jpg"
+title: Написати
+image: "/images/about-bg.jpg"
 permalink: /write/
 ---
 

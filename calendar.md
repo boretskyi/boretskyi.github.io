@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Навколо"
+title: Навколо
 permalink: /calendar/
 ---
 Розділ наповнюється
