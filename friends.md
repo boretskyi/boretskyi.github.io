@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Друзі
-description: Наші могилянські друзі
+description: Наші могилянські (фізично і за духом) друзі
 permalink: /friends/
 ---
 
