@@ -1,31 +1,32 @@
 <head>
 
+    {% capture description %}{% if page.subtitle %}{{ page.subtitle }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="{{ site.keywords }}">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ description | strip_newlines }}">
 
     <meta property="og:url" content="{% include url.html part=page.url %}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="uk_UA">
     <meta property="og:site_name" content="{{ site.title }}">
+
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
     {% else %}
     <meta property="og:title" content="{{ site.title }}">
     {% endif %}
-    {% if page.subtitle %}
-    <meta property="og:description" content="{{ page.subtitle }}">
-    {% else %}
-    <meta property="og:description" content="{{ site.description }}">
-    {% endif %}
+
+    <meta property="og:description" content="{{ description | strip_newlines }}">
+
     {% if page.image %}
-    {% if page.image contains 'http://' or page.image contains 'https://' %}
+        {% if page.image contains 'http://' or page.image contains 'https://' %}
     <meta property="og:image" content="{{ page.image }}">
-    {% else %}
+        {% else %}
     <meta property="og:image" content="{% include url.html part=page.image %}">
-    {% endif %}
+        {% endif %}
     {% else %}
     <meta property="og:image" content="{% include url.html part='/images/yov.jpg' %}">
     {% endif %}
