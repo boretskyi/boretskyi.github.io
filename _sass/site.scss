@@ -75,8 +75,12 @@ blockquote {
   }
 }
 
+ul {
+  margin-bottom: 1.5em;
+}
+
 hr.small {
-  max-width: 100px;
+  max-width: 150px;
   margin: 15px auto;
   border-width: 4px;
   border-color: white;
