@@ -15,7 +15,7 @@ $('#name').focus(function() {
 });
 
 // Make all images responsive
-$("img").addClass("img-responsive")
+$("img").addClass("img-responsive");
 
 // Navigation Scripts to Show Header on Scroll-Up
 $(function() {
@@ -28,6 +28,13 @@ $(function() {
     },
     function() {
       var currentTop = $(window).scrollTop();
+      if (currentTop === 0) {
+        if ($(window).width() > WIDTH_THRESHOLD) {
+          $('.navbar-custom').removeClass('is-visible is-fixed');
+        } else {
+          $('.navbar-custom').removeClass('is-fixed');
+        }
+      } else {
       //check if user is scrolling up
       if (currentTop <= this.previousTop) {
         //if scrolling up...
@@ -44,7 +51,7 @@ $(function() {
         if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) {
           $('.navbar-custom').addClass('is-fixed');
         }
-      }
+      }}
     this.previousTop = currentTop;
   });
 });
