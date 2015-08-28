@@ -91,18 +91,43 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
+  @extend .hardware-accelerated;
   @include transition-all(0.3s);
   @extend .sans-serif;
-  a.navbar-brand {
-    @extend .caps;
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-left: 0px !important;
+
+  .navbar-header {
     text-align: center;
-    &:hover {
-      color: $brand-primary
+  }
+
+  .navbar-toggle {
+    float: left;
+    padding-top: .7em;
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: .5em;
+    @include transition-all(0.3s);
+
+    &:hover,&:active,&:focus {
+      background: transparent;
+      opacity: 0.5;
     }
   }
+
+  a.navbar-brand {
+    @extend .caps;
+    display: inline-block;
+    float: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+
   .nav {
     li {
       margin-right: 1em;
@@ -155,7 +180,7 @@ hr.small {
     }
   }
   &.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
+  /* if the user changes the scrolling direction, we show the header */
     @include translate3d(0, 0, 0);
   }
 
