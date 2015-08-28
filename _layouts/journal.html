@@ -22,7 +22,8 @@ title: Вісник
 <!-- Main Content -->
 <div class="container" id="posts">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-1">
+      <div class="category">Останні статті</div>
       {% for post in paginator.posts %}
       <div class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl }}">
@@ -55,6 +56,20 @@ title: Вісник
           {% endif %}
       </ul>
       {% endif %}
+    </div>
+    <div class="col-lg-4 col-md-3 col-lg-offset-1">
+      <div class="category">Наживо</div>
+
+      <div class="widgets">
+
+        {% include sdk.html %}
+
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Yov_Boretskiy/with_replies" data-widget-id="637053760213266432">
+        Твіти Йова
+        </a>
+<!-- 
+        <div class="fb-page" data-href="https://www.facebook.com/yovkma" data-width="340" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div> -->
+      </div>
     </div>
   </div>
 </div>

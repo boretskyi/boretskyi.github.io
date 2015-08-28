@@ -338,6 +338,17 @@ hr.small {
   }
 }
 
+.category {
+  @extend .caps;
+  @extend .sans-serif;
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+.widgets {
+  margin-top: 1.5em;
+}
+
 // Post Preview Pages
 
 .post-preview {
