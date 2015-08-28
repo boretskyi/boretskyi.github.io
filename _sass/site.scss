@@ -64,11 +64,10 @@ img {
 }
 
 blockquote {
-  @extend .serif;
+  @extend .sans-serif;
   color: $gray;
   font-weight: 300;
-  font-style: italic;
-  font-size: 1.1em;
+  font-size: 1em;
 
   p:first-child {
     margin-top: 0;
