@@ -8,6 +8,7 @@ subtitle: "Студентський план дій новому президе�
 author: Іван Вербицький
 author_link: "https://www.facebook.com/ivan.verbytskyi"
 image: /media/mohyla_sultan/zaporogci2.jpg
+featured: true
 ---
 
 ## Студентський план дій новому президентові Могилянки
