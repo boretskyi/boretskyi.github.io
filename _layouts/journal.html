@@ -3,6 +3,8 @@ layout: default
 title: Вісник
 ---
 
+{% include sdk.html %}
+
 <!-- Page Header -->
 <div class="intro">
   {% assign counter = 0 %}
@@ -22,7 +24,7 @@ title: Вісник
 <!-- Main Content -->
 <div class="container" id="posts">
   <div class="row">
-    <div class="col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-1">
+    <div class="col-lg-6 col-lg-offset-1 col-md-8">
       <div class="category">Останні статті</div>
       {% for post in paginator.posts %}
       <div class="post-preview">
@@ -57,18 +59,19 @@ title: Вісник
       </ul>
       {% endif %}
     </div>
-    <div class="col-lg-4 col-md-3 col-lg-offset-1">
-      <div class="category">Наживо</div>
-
+    <div class="col-lg-4 col-md-4 col-lg-offset-1 hidden-xs hidden-sm">
       <div class="widgets">
+        <div class="category">Наживо</div>
 
-        {% include sdk.html %}
+        <div class="widget">
+          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Yov_Boretskiy/with_replies" data-widget-id="637053760213266432" data-height="500px">
+          Твіти Йова
+          </a>
+        </div>
 
-        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Yov_Boretskiy/with_replies" data-widget-id="637053760213266432">
-        Твіти Йова
-        </a>
-<!-- 
-        <div class="fb-page" data-href="https://www.facebook.com/yovkma" data-width="340" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div> -->
+        <div class="category">Фейсбук</div>
+
+        <div class="fb-page widget" data-href="https://www.facebook.com/yovkma" data-small-header="true" data-adapt-container-width="true" data-width="500" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/yovkma"><a href="https://www.facebook.com/yovkma">YOV</a></blockquote></div></div>
       </div>
     </div>
   </div>
