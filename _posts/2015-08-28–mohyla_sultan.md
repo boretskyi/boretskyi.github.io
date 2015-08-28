@@ -9,7 +9,6 @@ author: Іван Вербицький
 author_link: "https://www.facebook.com/ivan.verbytskyi"
 image: /media/mohyla_sultan/zaporogci1.jpg
 author_link: "https://www.facebook.com/ivan.verbytskyi"
-date: "28-08-2015 11:00"
 ---
 
 
