@@ -392,6 +392,9 @@ hr.small {
   @extend .sans-serif;
   font-size: 1em;
   margin: 1em 0;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .widgets {
