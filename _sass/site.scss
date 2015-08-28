@@ -363,10 +363,11 @@ hr.small {
   }
 
   .credit {
-    opacity: 0.4;
+    @extend .sans-serif;
+    opacity: 0.5;
+    font-size: .7em;
     text-align: right;
     padding-right: 1em;
-    font-style: italic;
     a {
       color: white;
       text-decoration: none;
