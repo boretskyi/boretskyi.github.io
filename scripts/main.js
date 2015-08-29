@@ -24,7 +24,7 @@ $(function() {
   var $window = $(window),
       $navbar = $('.navbar-custom');
 
-  var headerHeight = $navbar.height();
+  var headerHeight = $('.intro-header').height() || 300;
   $window.on('load resize', function() {
     var currentTop = $window.scrollTop();
     if (currentTop === 0 && $window.width() <= WIDTH_THRESHOLD) {
@@ -50,8 +50,10 @@ $(function() {
         }
       } else {
         //if scrolling down...
-        $navbar.removeClass('is-visible');
-        if (currentTop > headerHeight && !$navbar.hasClass('is-fixed')) {
+        if (currentTop > 0 && currentTop < headerHeight) {
+          $navbar.addClass('is-visible is-fixed');
+        } else {
+          $navbar.removeClass('is-visible');
           $navbar.addClass('is-fixed');
         }
       }
