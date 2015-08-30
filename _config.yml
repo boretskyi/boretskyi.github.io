@@ -95,13 +95,13 @@ prose:
           element: "text"
           placeholder: "Reuters"
           label: "Author or source of the image"
-          value: "null"
+          value: null
       - name: "image_credit_link"
         field:
           element: "text"
           placeholder: "http://reuters.com"
           label: "Image source link"
-          value: "null"
+          value: null
       - name: "tags"
         field:
           element: "multiselect"
