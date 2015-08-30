@@ -68,6 +68,10 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+          element: "textarea"
+          label: "Title"
       - name: "subtitle"
         field:
           element: "textarea"
