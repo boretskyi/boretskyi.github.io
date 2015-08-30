@@ -55,7 +55,8 @@ gems:
 
 # Prose.io
 prose:
-  rooturl: '_posts'
+  siteUrl: "http://yov.com.ua"
+  rooturl: "_posts"
   media: 'media'
   ignore:
     - /journal
