@@ -71,7 +71,7 @@ prose:
         field:
           element: "checkbox"
           label: "Featured"
-          value: "false"
+          value: false
       - name: "subtitle"
         field:
           element: "textarea"
