@@ -68,15 +68,19 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+          element: "textarea"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
       - name: "featured"
         field:
           element: "checkbox"
           label: "Featured"
           value: false
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
       - name: "author"
         field:
           element: "text"
