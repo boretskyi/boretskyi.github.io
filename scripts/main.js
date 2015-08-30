@@ -33,7 +33,7 @@ $(function() {
       $navbar.removeClass('is-visible is-fixed');
     }
   });
-  $window.on('load scroll', {
+  $window.on('scroll', {
       previousTop: 0
     },
     function() {
