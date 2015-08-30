@@ -28,9 +28,9 @@
                             <i class="fa fa-angle-down"></i>
                         </div>
                         <div class="meta hidden-xs">
-                            {% if include.post.image_credit %}
+                            {% if include.post.image_credit and include.post.image_credit|count > 0 %}
                             <div class="credit">
-                                Фото: {% if include.post.image_credit_link %}<a href="{{ include.post.image_credit_link }}">{{ include.post.image_credit }}</a>{% else %}{{ include.post.image_credit }}{% endif %}
+                                Фото: {% if include.post.image_credit_link and include.post.image_credit_link|count > 0 %}<a href="{{ include.post.image_credit_link }}">{{ include.post.image_credit }}</a>{% else %}{{ include.post.image_credit }}{% endif %}
                             </div>
                             {% endif %}
                         </div>
