@@ -42,7 +42,6 @@ navigation:
 featured_count: 1
 
 # Build settings
-
 markdown: kramdown
 paginate: 5
 paginate_path: /journal/:num
@@ -55,7 +54,6 @@ gems:
 
 
 # Prose.io
-
 prose:
   rooturl: '_posts'
   media: 'media'
@@ -65,14 +63,59 @@ prose:
     - /_includes
   metadata:
     _posts:
+
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
+
+      - name: "featured"
+        field:
+          element: "checkbox"
+          label: "Вибір редакції"
+          value: false
+
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Підзаголовок"
+
+      - name: "author"
+        field:
+          element: "text"
+          placeholder: "Йов Борецький"
+          label: "Автор"
+
+      - name: "author_link"
+        field:
+          element: "text"
+          label: "Посилання на автора"
+          placeholder: "http://facebook.com/username"
+
+      - name: "image"
+        field:
+          element: "text"
+          label: "Зображення на фон"
+          placeholder: "/media/image.jpg"
+
+      - name: "image_credit"
+        field:
+          element: "text"
+          placeholder: "Reuters"
+          label: "Автор зображення"
+          value: null
+
+      - name: "image_credit_link"
+        field:
+          element: "text"
+          placeholder: "http://reuters.com"
+          label: "Посилання на автора зображення"
+          value: null
+
       - name: "tags"
         field:
           element: "multiselect"
-          label: "Add Tags"
+          label: "Категорії"
           placeholder: "Choose Tags"
           options:
             - name: "Культура"
@@ -81,3 +124,5 @@ prose:
               value: "community"
             - name: "Наукма"
               value: "science"
+
+-
