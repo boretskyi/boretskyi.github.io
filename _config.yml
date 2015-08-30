@@ -63,54 +63,45 @@ prose:
     - /_includes
   metadata:
     _posts:
-
       - name: "layout"
         field:
           element: "hidden"
           value: "post"
-
       - name: "featured"
         field:
           element: "checkbox"
-          label: "Вибір редакції"
-          value: false
-
+          label: "Featured"
+          value: "false"
       - name: "subtitle"
         field:
           element: "text"
-          label: "Підзаголовок"
-
+          label: "Subtitle"
       - name: "author"
         field:
           element: "text"
-          placeholder: "Йов Борецький"
-          label: "Автор"
-
+          label: "Author"
       - name: "author_link"
         field:
           element: "text"
-          label: "Посилання на автора"
+          label: "Link to author's website or page"
           placeholder: "http://facebook.com/username"
-
       - name: "image"
         field:
           element: "text"
-          label: "Зображення на фон"
+          label: "Background image"
           placeholder: "/media/image.jpg"
-
       - name: "image_credit"
         field:
           element: "text"
           placeholder: "Reuters"
-          label: "Автор зображення"
-          value: null
-
+          label: "Author or source of the image"
+          value: "null"
       - name: "image_credit_link"
         field:
           element: "text"
           placeholder: "http://reuters.com"
-          label: "Посилання на автора зображення"
-          value: null
+          label: "Image source link"
+          value: "null"
 
       - name: "tags"
         field:
