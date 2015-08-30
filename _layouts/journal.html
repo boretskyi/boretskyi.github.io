@@ -39,7 +39,7 @@ title: Вісник
               </h3>
               {% endif %}
           </a>
-          <p class="post-meta"><span class="post-meta-main">{% if post.authorlink %}<a href="{{ post.authorlink }}">{{ post.author }}</a>{% else %}{{ post.author }}{% endif %}, {% include date.html date=post.date %}.</span> <a class="comments-link" href="{% include url.html part=post.url %}#disqus_thread"></a></p>
+          <p class="post-meta"><span class="post-meta-main">{% if post.author_link and post.author_link|count > 0 %}<a href="{{ post.author_link }}">{{ post.author }}</a>{% else %}{{ post.author }}{% endif %}, {% include date.html date=post.date %}.</span> <a class="comments-link" href="{% include url.html part=post.url %}#disqus_thread"></a></p>
       </div>
       <hr>
       {% endfor %}
