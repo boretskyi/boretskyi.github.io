@@ -1,13 +1,13 @@
 ---
 layout: post
 tags: 
-  - — community
+  - community
 published: true
 title: Лист могилянському султану
 subtitle: "Студентський план дій новому президентові Могилянки. Напрацьований за підсумками студентської дискусії 13 листопада 2014 року, за 4 дні до виборів президента"
 author: Іван Вербицький
 author_link: "https://www.facebook.com/ivan.verbytskyi"
-image: /media/mohyla_sultan/zaporogci2.jpg
+image: /media/students_open_letter/zaporogci2.jpg
 featured: true
 ---
 
