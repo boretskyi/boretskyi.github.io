@@ -74,7 +74,7 @@ prose:
           value: "false"
       - name: "subtitle"
         field:
-          element: "text"
+          element: "textarea"
           label: "Subtitle"
       - name: "author"
         field:
@@ -83,7 +83,8 @@ prose:
       - name: "author_link"
         field:
           element: "text"
-          label: "Link to author's website or page"
+          label: "Author link"
+          help: "Link to author's website or page"
           placeholder: "http://facebook.com/username"
       - name: "image"
         field:
@@ -94,13 +95,15 @@ prose:
         field:
           element: "text"
           placeholder: "Reuters"
-          label: "Author or source of the image"
+          label: "Image credit"
+          help: "Author or source of the image"
           value: null
       - name: "image_credit_link"
         field:
           element: "text"
           placeholder: "http://reuters.com"
-          label: "Image source link"
+          label: "Image credit link"
+          help: "Link to image source or author"
           value: null
       - name: "tags"
         field:
