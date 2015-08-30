@@ -102,12 +102,11 @@ prose:
           placeholder: "http://reuters.com"
           label: "Image source link"
           value: "null"
-
       - name: "tags"
         field:
           element: "multiselect"
-          label: "Категорії"
-          placeholder: "Choose Tags"
+          label: "Categories"
+          placeholder: "Choose categories"
           options:
             - name: "Культура"
               value: "culture"
