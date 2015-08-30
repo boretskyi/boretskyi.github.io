@@ -32,6 +32,16 @@
     <meta property="og:image" content="{% include url.html part='/images/yov.jpg' %}">
     {% endif %}
 
+    {% if page.date %}
+      <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {% endif %}
+
+    {% comment %}
+    {% for post in page.related_posts limit:3 %}
+        <meta property="og:see_also" content="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% endfor %}
+    {% endcomment %}
+
     <link rel="canonical" href="{% include url.html part=page.url %}">
     <link rel="me" href="https://twitter.com/{{ site.twitter_username }}">
 
