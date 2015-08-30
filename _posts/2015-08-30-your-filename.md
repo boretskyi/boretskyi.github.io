@@ -1,6 +1,7 @@
 ---
 layout: post
-tags: null
+tags: 
+  - science
 published: true
 title: "Фрешостаття: кого залайкати?"
 subtitle: Довідник по всім сторінкам студентьских організацій
