@@ -68,10 +68,6 @@ prose:
         field:
           element: "hidden"
           value: "post"
-      - name: "title"
-        field:
-          element: "textarea"
-          label: "Title"
       - name: "subtitle"
         field:
           element: "textarea"
@@ -91,6 +87,11 @@ prose:
           label: "Author link"
           help: "Link to author's website or page"
           placeholder: "http://facebook.com/username"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
       - name: "image"
         field:
           element: "text"
