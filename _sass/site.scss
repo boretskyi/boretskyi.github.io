@@ -19,16 +19,17 @@ body {
 
 // -- Typography
 
+ a {
+  border-bottom: 1px solid;
+  &,&:hover,&:focus,&:active,&:visited{
+    text-decoration: none;
+  }
+}
+
 p {
   line-height: 1.5;
   font-weight: 300;
   margin: 1.5em 0;
-  a {
-    border-bottom: 1px solid;
-    &,&:hover,&:focus,&:active,&:visited{
-      text-decoration: none;
-    }
-  }
 }
 
 h1,
