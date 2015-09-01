@@ -19,13 +19,6 @@ body {
 
 // -- Typography
 
- a {
-  border-bottom: 1px solid;
-  &,&:hover,&:focus,&:active,&:visited{
-    text-decoration: none;
-  }
-}
-
 p {
   line-height: 1.5;
   font-weight: 300;
@@ -460,9 +453,14 @@ hr.small {
 
 .content {
   font-size: 1.1em;
+
   a {
+    border-bottom: 1px solid;
     border-bottom-color: rgba(black, 0.3);
-    &:hover,&:focus {
+    &,&:hover,&:focus,&:active,&:visited{
+      text-decoration: none;
+    }
+    &:hover,&:focus{
       border-bottom-color: $brand-primary;
     }
   }
