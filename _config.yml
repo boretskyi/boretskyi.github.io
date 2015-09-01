@@ -102,6 +102,16 @@ prose:
           element: "text"
           label: "Background image"
           placeholder: "/media/image.jpg"
+      - name: "image_width"
+        field:
+          element: "text"
+          label: "Background image width, in pixels"
+          placeholder: "1600"
+      - name: "image_height"
+        field:
+          element: "text"
+          label: "Background image height, in pixels"
+          placeholder: "1000"
       - name: "image_credit"
         field:
           element: "text"
