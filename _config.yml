@@ -43,7 +43,7 @@ navigation:
 featured_count: 1
 
 # Build settings
-markdown: kramdown
+markdown: rdiscount
 paginate: 5
 paginate_path: /journal/:num
 permalink: /journal/:categories/:year/:month/:day/:title/
