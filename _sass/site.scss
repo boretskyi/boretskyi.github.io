@@ -406,9 +406,9 @@ hr.small {
   > a {
     @include transition-all(0.2s);
     color: $gray-dark;
+    text-decoration: none;
     &:hover,
     &:focus {
-      text-decoration: none;
       color: $brand-primary;
     }
     > .post-title {
@@ -430,9 +430,10 @@ hr.small {
     font-weight: 400;
     margin-top: 0;
     a {
-      text-decoration: none;
       color: $gray;
+      border-bottom: 1px solid;
       border-bottom-color: rgba(black, 0.1);
+      text-decoration: none;
       &:hover, &:focus {
         border-bottom-color: $brand-primary;
         color: $brand-primary;
