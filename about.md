@@ -14,6 +14,7 @@ permalink: /about/
 Щиро вдячний [Богдану](http://bogdankulynych.me) за розробку нової версії YOVa та мотивацію.
 
 Буду вдячний, якщо допоможете підтримувати і далі розвивати цей проект.  Виникло запитання чи є пропозиція?  Пиши на [{{ site.email }}](mailto:{{ site.email }})!  
+
 **Tempus fugit, Academia sempiterna.**
 
 ------
