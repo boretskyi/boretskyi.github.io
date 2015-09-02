@@ -10,9 +10,14 @@
 
     <!-- Facebook metadata -->
     <meta property="og:url" content="{% include url.html part=page.url %}">
-    <meta property="og:type" content="website">
     <meta property="og:locale" content="uk_UA">
     <meta property="og:site_name" content="{{ site.title }}">
+
+    {% if page.layout == 'post' %}
+    <meta property="og:type" content="article">
+    {% else %}
+    <meta property="og:type" content="website">
+    {% endif %}
 
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
