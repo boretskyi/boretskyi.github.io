@@ -13,7 +13,7 @@
     <meta property="og:locale" content="uk_UA">
     <meta property="og:site_name" content="{{ site.title }}">
 
-    {% if page.layout == 'post' %}
+    {% if page.layout == 'post' or page.layout == 'page' %}
     <meta property="og:type" content="article">
     {% else %}
     <meta property="og:type" content="website">

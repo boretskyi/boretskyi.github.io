@@ -1,9 +1,14 @@
 ---
-layout: default
 title: Вісник
 ---
+<!DOCTYPE html>
+<html>
 
+{% include head.html %}
+
+<body>
 {% include sdk.html %}
+{% include nav.html %}
 
 <!-- Page Header -->
 <div class="intro">
@@ -79,6 +84,9 @@ title: Вісник
   </div>
 </div>
 
+{% include footer.html %}
+
+<!-- Disqus comments count -->
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES * * */
 var disqus_shortname = 'yovboretskiy';
@@ -91,3 +99,7 @@ var disqus_shortname = 'yovboretskiy';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 </script>
+{% include scripts.html %}
+
+</body>
+</html>
