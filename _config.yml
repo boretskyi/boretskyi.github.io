@@ -102,15 +102,20 @@ prose:
           element: "text"
           label: "Background image"
           placeholder: "/media/image.jpg"
-      - name: "image_width"
+      - name: "thumbnail"
         field:
           element: "text"
-          label: "Background image width, in pixels"
+          label: "Opengraph (Facebook) thumbnail image"
+          placeholder: "/media/image.jpg"
+      - name: "thumbnail_width"
+        field:
+          element: "text"
+          label: "Thumbnail image width, in pixels"
           placeholder: "1600"
-      - name: "image_height"
+      - name: "thumbnail_height"
         field:
           element: "text"
-          label: "Background image height, in pixels"
+          label: "Thumbnail image height, in pixels"
           placeholder: "1000"
       - name: "image_credit"
         field:
