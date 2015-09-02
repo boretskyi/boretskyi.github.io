@@ -29,7 +29,7 @@
 
     {% if page.thumbnail and page.thumbnail != '' %}
 
-        {% if page.thumbnail contains 'http://' or page.thumbnail contains 'https://' %}
+        {% if (page.thumbnail contains 'https://') or (page.thumbnail contains 'http://') %}
     <meta property="og:image" content="{{ page.thumbnail }}">
         {% else %}
     <meta property="og:image" content="{% include url.html part=page.thumbnail %}">
