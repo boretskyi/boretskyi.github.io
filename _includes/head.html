@@ -32,8 +32,6 @@
 
     <meta property="og:description" content="{{ description | strip_newlines }}">
 
-    {% comment %}
-    <!-- Важливо. Тим часово коментую, секцію, поки не вирішиться проблема з thumbnails для фейсбука без HTTPS -->
     {% if page.thumbnail and page.thumbnail != '' %}
 
         {% if (page.thumbnail contains 'https://') or (page.thumbnail contains 'http://') %}
@@ -84,13 +82,6 @@
     {% if page.thumbnail_height and page.thumbnail_height != '' %}
     <meta property="og:image:height" content="{{ page.thumbnail_height }}">
     {% endif %}
-
-    {% endcomment %}
-
-    <meta property="og:image" content="https://i.imgur.com/J8vPcGC.jpg">
-    <meta property="og:image:width" content="985">
-    <meta property="og:image:height" content="515">
-    <meta property="og:image:type" content="image/jpeg">
 
     {% comment %}
     {% for post in page.related_posts limit:3 %}
