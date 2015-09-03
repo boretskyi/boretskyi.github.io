@@ -1,18 +1,18 @@
 ---
 layout: post
-subtitle: null
+subtitle: тест тест тест тест тест тест тест тест тест тест тест тест тест тест тест тест тест тест
 featured: false
-author: ""
+author: Тест Тестенко
 author_link: ""
 date: "2015-09-03 10:33 +0300"
 image: /media/test/test.jpg
-thumbnail: ""
-thumbnail_width: ""
-thumbnail_height: ""
-image_credit: ""
+thumbnail: /media/test/test_t.jpg
+thumbnail_width: "820"
+thumbnail_height: "400"
+image_credit: Тест
 image_credit_link: ""
 tags: 
-  - "null"
+  - science
 published: false
 title: Тестова стаття
 ---
