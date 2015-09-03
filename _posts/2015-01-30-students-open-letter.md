@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: 
+categories: 
   - community
 published: true
 title: Лист могилянському султану
