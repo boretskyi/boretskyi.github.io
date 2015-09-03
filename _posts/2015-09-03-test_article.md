@@ -13,7 +13,7 @@ image_credit: Тест
 image_credit_link: ""
 tags: 
   - science
-published: false
+published: true
 title: Тестова стаття
 ---
 
