@@ -46,7 +46,7 @@ featured_count: 1
 markdown: rdiscount
 paginate: 5
 paginate_path: /journal/:num
-permalink: /journal/:categories/:year/:month/:day/:title/
+permalink: /journal/:year/:month/:day/:title/
 sass:
     style: :compressed
 
