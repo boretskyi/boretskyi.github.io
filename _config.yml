@@ -92,6 +92,12 @@ prose:
           label: "Author link"
           help: "Link to author's website or page"
           placeholder: "http://facebook.com/username"
+      - name: "author_facebook_profile"
+        field:
+          element: "text"
+          label: "Author facebook profile"
+          help: "Fill this if authors link is not a facebook profile"
+          placeholder: "http://facebook.com/username"
       - name: "date"
         field:
           element: "text"
@@ -131,7 +137,7 @@ prose:
           label: "Image credit link"
           help: "Link to image source or author"
           value: null
-      - name: "tags"
+      - name: "categories"
         field:
           element: "multiselect"
           label: "Categories"
@@ -141,5 +147,5 @@ prose:
               value: "culture"
             - name: "Суспільство"
               value: "community"
-            - name: "Наукма"
+            - name: "Наука"
               value: "science"
