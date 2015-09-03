@@ -20,6 +20,12 @@
     <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
         {% endif %}
 
+        {% if page.author_facebook_profile and page.author_facebook_profile != '' %}
+    <meta property="article:author" content="{{ page.author_facebook_profile }}">
+        {% elsif page.author_link contains 'facebook.com/' %}
+    <meta property="article:author" content="{{ page.author_link }}">
+        {% endif %}
+
     {% else %}
     <meta property="og:type" content="website">
     {% endif %}
@@ -90,8 +96,6 @@
     {% endcomment %}
 
     <link rel="canonical" href="{% include url.html part=page.url %}">
-    <link rel="me" href="https://twitter.com/{{ site.twitter_username }}">
-
 
     <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
