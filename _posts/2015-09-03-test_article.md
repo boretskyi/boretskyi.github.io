@@ -5,7 +5,7 @@ featured: false
 author: ""
 author_link: ""
 date: "2015-09-03 10:33 +0300"
-image: ""
+image: /media/test/test.jpg
 thumbnail: ""
 thumbnail_width: ""
 thumbnail_height: ""
