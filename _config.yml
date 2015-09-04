@@ -96,7 +96,7 @@ prose:
         field:
           element: "text"
           label: "Author facebook profile"
-          help: "Fill this if authors link is not a facebook profile"
+          help: "Fill this if author's link is not a facebook profile"
           placeholder: "http://facebook.com/username"
       - name: "date"
         field:
@@ -137,6 +137,13 @@ prose:
           label: "Image credit link"
           help: "Link to image source or author"
           value: null
+      - name: "fotorama"
+        field:
+          element: "checkbox"
+          placeholder: "http://reuters.com"
+          label: "Fotorama"
+          help: "Enable fotorama image slideshows"
+          value: false
       - name: "categories"
         field:
           element: "multiselect"
