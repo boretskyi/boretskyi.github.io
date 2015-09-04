@@ -2,13 +2,11 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" data-no-instant></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js" data-no-instant></script>
-<!-- Instantclick -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
-<script data-no-instant>
-InstantClick.init();
-</script> -->
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/scripts/main.min.js " | prepend: site.baseurl }}" data-no-instant></script>
+{% if page.fotorama %}
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+{% endif %}
 <!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
