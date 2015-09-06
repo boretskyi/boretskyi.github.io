@@ -15,7 +15,7 @@ image_credit_link: "https://www.facebook.com/mari.kinovych"
 fotorama: false
 categories: 
   - community
-published: true
+published: false
 title: Гурто і (з)ради
 publushed: true
 ---
