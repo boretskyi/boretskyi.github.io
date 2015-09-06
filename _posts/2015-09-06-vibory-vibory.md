@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Гурто і (з)ради
 subtitle: "Хто такі ради гуртожитків і чому вони нам потрібні?"
 featured: true
 author: Микита Євстіфеєв
@@ -16,7 +17,6 @@ fotorama: false
 categories: 
   - community
 published: true
-title: Гурто і (з)ради
 ---
 
 
