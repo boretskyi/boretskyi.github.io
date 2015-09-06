@@ -298,11 +298,8 @@ hr.small {
   .site-heading,
   .post-heading,
   .page-heading {
-    padding: 100px 0 50px;
+    padding: 8em 0 2em;
     color: white;
-    @media only screen and (min-width: 768px) {
-      padding: 120px 0 50px;
-    }
   }
   .site-heading,
   .page-heading {
@@ -337,7 +334,7 @@ hr.small {
     .subheading {
       @extend .sans-serif;
       font-size: 1.25em;
-      margin: 10px 0 30px;
+      margin: 1em 0 1em;
       font-weight: 400;
     }
     .meta {
