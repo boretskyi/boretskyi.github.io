@@ -14,10 +14,11 @@ image_credit: ""
 image_credit_link: ""
 categories: 
   - community
-published: false
+published: true
 title: Польскі Ювеналії
 fotorama: true
 ---
+
 
 
 
