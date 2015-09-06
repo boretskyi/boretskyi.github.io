@@ -13,11 +13,9 @@ thumbnail_height: ""
 image_credit: ""
 image_credit_link: ""
 fotorama: false
-categories: null
+categories: 
+  - "null"
 published: false
-title: "vibory-vibory"
+title: "Гурто і (з)ради, або трохи про ради гуртожитків"
 ---
 
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
