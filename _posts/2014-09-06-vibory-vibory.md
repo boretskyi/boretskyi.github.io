@@ -15,9 +15,11 @@ image_credit_link: ""
 fotorama: false
 categories: 
   - "null"
-published: false
+published: true
 title: "Гурто і (з)ради, або трохи про ради гуртожитків"
+publushed: true
 ---
+
 
 
 <spoiler> 
