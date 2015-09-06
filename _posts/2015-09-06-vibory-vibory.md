@@ -2,7 +2,7 @@
 layout: post
 subtitle: "Хто такі ради гуртожитків і чому вони нам потрібні?"
 featured: true
-author: "Микита Євстіфеєв "
+author: Микита Євстіфеєв
 author_link: "https://www.facebook.com/profile.php?id=100002577439728"
 author_facebook_profile: ""
 date: "2015-09-06 10:44 +0300"
@@ -19,6 +19,7 @@ published: true
 title: Гурто і (з)ради
 publushed: true
 ---
+
 
 
 
@@ -74,5 +75,3 @@ publushed: true
 Let’s do it, guys. Бо ж (не буду занадто оригінальним) Могилянка #щета, так?
 
 **п.с. На Троєщині вибори вже цього тижня, 8 і 9 вересня, слідкуйте [за інфою тут](http://vk.com/troya15). В інших гурто – вже незабаром.**
-
-
