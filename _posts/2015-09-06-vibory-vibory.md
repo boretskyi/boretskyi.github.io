@@ -17,7 +17,6 @@ categories:
   - community
 published: true
 title: Гурто і (з)ради
-publushed: true
 ---
 
 
