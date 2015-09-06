@@ -5,7 +5,7 @@ featured: false
 author: Лесик Якимчук
 author_link: "https://www.facebook.com/lesyk.yakymchuk.9"
 author_facebook_profile: ""
-date: "2015-09-04 13:04 +0300"
+date: "2014-09-04 13:04 +0300"
 image: "https://ucarecdn.com/9f4e5272-cfc1-4e1e-87b5-188d3072d9a5/"
 thumbnail: ""
 thumbnail_width: ""
