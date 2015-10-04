@@ -1,7 +1,7 @@
 ---
 layout: post
 subtitle: "Оповідь про гуртожиток, який не зміг."
-featured: false
+featured: true
 author: Катерина Лизогуб
 author_link: "https://www.facebook.com/profile.php?id=100007046461752"
 author_facebook_profile: ""
