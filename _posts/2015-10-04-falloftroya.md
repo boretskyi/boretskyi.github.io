@@ -2,18 +2,19 @@
 layout: post
 subtitle: null
 featured: false
-author: ""
-author_link: ""
+author: Катерина Лизогуб
+author_link: "https://www.facebook.com/profile.php?id=100007046461752"
 author_facebook_profile: ""
 date: "2015-10-04 12:09 +0300"
-image: ""
-thumbnail: ""
-thumbnail_width: ""
-thumbnail_height: ""
-image_credit: ""
-image_credit_link: ""
+image: /media/troya/grumpy.jpg
+thumbnail: /media/troya/grumpy_t.jpg
+thumbnail_width: "1600"
+thumbnail_height: "1000"
+image_credit: Марія Кінович
+image_credit_link: "https://www.facebook.com/mari.kinovych"
 fotorama: false
-categories: null
+categories: 
+  - community
 published: false
 title: falloftroya
 ---
