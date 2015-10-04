@@ -6,7 +6,7 @@ author: Катерина Лизогуб
 author_link: "https://www.facebook.com/profile.php?id=100007046461752"
 author_facebook_profile: ""
 date: "2015-10-04 12:09 +0300"
-image: /media/troya/grumpy.jpg
+image: /media/troya/grumpy1.jpg
 thumbnail: /media/troya/grumpy_t.jpg
 thumbnail_width: "1600"
 thumbnail_height: "1000"
