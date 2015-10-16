@@ -6,7 +6,7 @@ author: ""
 author_link: ""
 author_facebook_profile: ""
 date: "2015-10-16 16:46 +0300"
-image: ""
+image: /media/cake/cake.jpg
 thumbnail: ""
 thumbnail_width: ""
 thumbnail_height: ""
