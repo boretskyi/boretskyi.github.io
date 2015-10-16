@@ -7,7 +7,7 @@ author_link: "https://www.facebook.com/lordaauch?"
 author_facebook_profile: ""
 date: "2015-10-16 16:46 +0300"
 image: /media/cake/cake.jpg
-thumbnail: ""
+thumbnail: /media/cake/cake_t.jpg
 thumbnail_width: ""
 thumbnail_height: ""
 image_credit: Марія Кінович
