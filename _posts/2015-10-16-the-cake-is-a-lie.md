@@ -15,7 +15,7 @@ image_credit_link: ""
 fotorama: false
 categories: 
   - "null"
-published: false
+published: true
 title: "Элита нации: миф и церемониал в Киево-Могилянской академии"
 ---
 
