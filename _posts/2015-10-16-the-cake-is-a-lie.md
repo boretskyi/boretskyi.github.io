@@ -22,7 +22,7 @@ title: "Элита нации: миф и церемониал в Киево-Мо
 
   <style>
    p {
-    text-indent: 20px;
+    text-indent: 50px;
    }
   </style>
  </head>
