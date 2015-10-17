@@ -16,7 +16,7 @@ fotorama: false
 categories: 
   - community
   - science
-published: true
+published: false
 title: "Элита нации: миф и церемониал в Киево-Могилянской академии"
 ---
 
