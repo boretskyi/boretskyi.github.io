@@ -92,5 +92,5 @@ title: "Що нарішала Конференція студентів 2 лис
 Де ж документи? Протокол Конференції тут.
 
 
-<p align="center"> <iframe width="480" height="360" src="https://www.youtube.com/embed/44Pv7yoBNmI" frameborder="0" allowfullscreen></iframe> </p>
+<p align="center"> <iframe width="480" height="360" src="https://www.youtube.com/embed/44Pv7yoBNmI" frameborder="0" allowfullscreen></iframe></p>
 
