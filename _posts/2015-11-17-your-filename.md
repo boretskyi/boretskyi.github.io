@@ -15,7 +15,7 @@ image_credit_link: "https://www.facebook.com/mari.kinovych"
 fotorama: false
 categories: 
   - community
-published: false
+published: true
 title: "Що нарішала Конференція студентів 2 листопада?"
 ---
 
