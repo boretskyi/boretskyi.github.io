@@ -15,7 +15,7 @@ image_credit_link: ""
 fotorama: false
 categories: 
   - "null"
-published: true
+published: false
 title: "Що нарішала Конференція студентів 2 листопада?"
 ---
 
