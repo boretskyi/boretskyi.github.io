@@ -3,7 +3,7 @@ layout: post
 subtitle: Про основні пропозиції студентів щодо вдосконаленя навчальних програм на ФЕН.
 featured: false
 author: Олексій Гаманюк
-author_link: "https://www.facebook.com/olexiy.gamaniuk"
+author_link: "https://facebook.com/olexiy.gamaniuk"
 author_facebook_profile: ""
 date: "2016-03-02 18:22 +0200"
 image: /media/winlose/head.jpg
