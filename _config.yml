@@ -140,7 +140,6 @@ prose:
       - name: "fotorama"
         field:
           element: "checkbox"
-          placeholder: "http://reuters.com"
           label: "Fotorama"
           help: "Enable fotorama image slideshows"
           value: false
