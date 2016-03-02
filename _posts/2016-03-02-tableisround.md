@@ -1,22 +1,22 @@
 ---
 layout: post
-subtitle: null
+subtitle: Про основні пропозиції студентів щодо вдосконаленя навчальних програм на ФЕН.
 featured: false
-author: ""
+author: Олексій Гаманюк
 author_link: ""
-author_facebook_profile: ""
+author_facebook_profile: "https://www.facebook.com/olexiy.gamaniuk"
 date: "2016-03-02 18:22 +0200"
-image: ""
-thumbnail: ""
-thumbnail_width: ""
-thumbnail_height: ""
+image: /media/winlose/head.jpg
+thumbnail: /media/winlose/headt.jpg
+thumbnail_width: "1600"
+thumbnail_height: "1200"
 image_credit: ""
 image_credit_link: ""
 fotorama: false
 categories: 
-  - "null"
+  - community
 published: false
-title: tableisround
+title: "Круглий стіл на ФЕН: боротьба триває."
 ---
 
 2 лютого на ФЕНі відбувся круглий стіл щодо вдосконалення навчальних програм відповідно до вимог ринку праці. До дискусії було запрошено викладачів, студентів та роботодавців. Як я вже писав на своїй сторінці в Facebook ввечері після заходу: «Тепер головне, щоб усе не обмежилося етапом "поговорили і розійшлися", а переросло у реальні зміни до навчальних планів.».  
