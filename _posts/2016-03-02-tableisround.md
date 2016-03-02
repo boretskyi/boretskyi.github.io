@@ -15,7 +15,7 @@ image_credit_link: ""
 fotorama: false
 categories: 
   - community
-published: false
+published: true
 title: "Круглий стіл на ФЕН: боротьба триває."
 ---
 
