@@ -52,6 +52,7 @@ sass:
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 
 # Prose.io
