@@ -1,7 +1,30 @@
 ---
 layout: clean
 ---
- 
+
 <body class="yov">
-<iframe src="https://www.youtube.com/embed/4IKddfxkDWk" allowfullscreen style="height: 100%; width: 100%; position: absolute; border: 0;"></iframe>
+  <!-- start stars -->
+  <div class="stars">
+    <canvas id="gravity"></canvas>
+  </div>
+  <!-- end stars -->
+
+  <div class="container logo">
+    <img src="{{ "/images/yov.svg " | prepend: site.baseurl }}" class="img-responsive">
+  </div>
+
+  <div class="container links">
+    <ul class="nav nav-justified">
+      {% for link in site.navigation %}
+      {% if link.landing %}
+        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% include scripts.html %}
+  <!-- Stars script -->
+  <script src="{{ "/scripts/stars.min.js" | prepend: site.baseurl }}"></script>
+
 </body>
